@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "TitleFront";
+  src: url("/Titlefont.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Minimal black & white theme */
+html,body {
+  height: 100%;
+  margin: 0;
+  background: #000;
+}
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
