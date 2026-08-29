@@ -9252,14 +9252,14 @@ b7ob$2o5b2o$8bo$8bo$8bo$7bob$6b2ob$4b3o2b$3b2o4b$3bo5b$3bo5b$3bo5b$3bo5b$3bo5b$9
         Object.assign(dlBtn.style, { padding: '6px 10px', cursor: 'pointer' });
         dlBtn.addEventListener('click', async () => {
           try {
-            const resp = await fetch('/V-Gun.txt');
+            const resp = await fetch('/v-gun.txt');
             if (!resp.ok) throw new Error('Failed to fetch V-Gun.txt');
             const txt = await resp.text();
             const blob = new Blob([txt], { type: 'text/plain' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'V-Gun.txt';
+            a.download = 'v-gun.txt';
             document.body.appendChild(a);
             a.click();
             a.remove();
@@ -9275,7 +9275,7 @@ b7ob$2o5b2o$8bo$8bo$8bo$7bob$6b2ob$4b3o2b$3b2o4b$3bo5b$3bo5b$3bo5b$3bo5b$3bo5b$9
         Object.assign(loadBtn.style, { padding: '6px 10px', cursor: 'pointer' });
         loadBtn.addEventListener('click', async () => {
           try {
-            const resp = await fetch('/V-Gun.txt');
+            const resp = await fetch('/v-gun.txt');
             if (!resp.ok) throw new Error('Failed to fetch V-Gun.txt');
             const txt = await resp.text();
             const cells = parseRLE(txt);
@@ -9297,7 +9297,7 @@ b7ob$2o5b2o$8bo$8bo$8bo$7bob$6b2ob$4b3o2b$3b2o4b$3bo5b$3bo5b$3bo5b$3bo5b$3bo5b$9
         Object.assign(instantBtn.style, { padding: '6px 10px', cursor: 'pointer' });
         instantBtn.addEventListener('click', async () => {
           try {
-            const resp = await fetch('/V-Gun.txt');
+            const resp = await fetch('/v-gun.txt');
             if (!resp.ok) throw new Error('Failed to fetch V-Gun.txt');
             const txt = await resp.text();
             const cells = parseRLE(txt);
