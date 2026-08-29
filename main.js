@@ -53,7 +53,7 @@ try {
   titleFontFace.textContent = `
     @font-face {
       font-family: "TitleFront";
-      src: url("/Titlefont.otf") format("opentype");
+      src: url("Titlefont.otf") format("opentype");
       font-weight: 700;
       font-style: normal;
       font-display: swap;
