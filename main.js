@@ -174,21 +174,25 @@ try {
 // (Favicon1.ico -> Favicon2.ico -> Favicon3.ico -> Favicon4.ico -> back to 1)
 (function setAnimatedFavicon() {
   const frames = ['favicon1.ico', 'favicon2.ico', 'favicon3.ico', 'favicon4.ico'];
-  const FRAME_INTERVAL_MS = 310; // adjust animation speed here
+  const FRAME_INTERVAL_MS = 310;
 
-  let link = document.querySelector("link[rel~='icon']");
-  if (!link) {
-    link = document.createElement('link');
+  function setFavicon(href) {
+    // Remove any existing icon link(s) and insert a brand new one, rather than mutating
+    // .href in place -- some browsers (notably Opera) don't reliably re-fetch/re-render
+    // a favicon when an existing <link>'s href is just changed.
+    document.querySelectorAll("link[rel~='icon']").forEach(el => el.remove());
+    const link = document.createElement('link');
     link.rel = 'icon';
+    link.href = href;
     document.head.appendChild(link);
   }
 
   let frameIndex = 0;
-  link.href = frames[frameIndex];
+  setFavicon(frames[frameIndex]);
 
   setInterval(() => {
     frameIndex = (frameIndex + 1) % frames.length;
-    link.href = frames[frameIndex];
+    setFavicon(frames[frameIndex]);
   }, FRAME_INTERVAL_MS);
 })();
 
