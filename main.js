@@ -161,7 +161,7 @@ try {
   titleFontFace.textContent = `
     @font-face {
       font-family: "TitleFront";
-      src: url("/Titlefont.otf") format("opentype");
+      src: url("Titlefont.otf") format("opentype");
       font-weight: 700;
       font-style: normal;
       font-display: swap;
@@ -4179,7 +4179,7 @@ const presetsLarge = [
     // small fallback RLE is kept for environments without fetch; primary source is filePath
     rle: `x = 9, y = 9, rule = B3/S23
 bo3bo3b$obo3bobo$2b3o3b$3b3o3$3b3o$2b3o3b$obo3bobo$bo3bo3b!`,
-    filePath: '/V-Gun.txt'
+    filePath: 'V-Gun.txt'
   },
   {
     name: 'Leafbug',
@@ -4187,7 +4187,7 @@ bo3bo3b$obo3bobo$2b3o3b$3b3o3$3b3o$2b3o3b$obo3bobo$bo3bo3b!`,
     // small fallback RLE (a glider) kept for environments without fetch; primary source is filePath
     rle: `x = 3, y = 3, rule = B3/S23
 bob$2bo$3o!`,
-    filePath: '/Leaf_Bug2.rle'
+    filePath: 'Leaf_Bug2.rle'
   },
   {
     name: 'P12420 Gun',
@@ -4195,7 +4195,7 @@ bob$2bo$3o!`,
     // small fallback RLE (a glider) kept for environments without fetch; primary source is filePath
     rle: `x = 3, y = 3, rule = B3/S23
 bob$2bo$3o!`,
-    filePath: '/p12420_gun.rle'
+    filePath: 'p12420_gun.rle'
   },
   {
     name: 'P8064 27-Engine Solifuge Gun',
@@ -4203,7 +4203,7 @@ bob$2bo$3o!`,
     // small fallback RLE (a glider) kept for environments without fetch; primary source is filePath
     rle: `x = 3, y = 3, rule = B3/S23
 bob$2bo$3o!`,
-    filePath: '/p8064_27-engine_solifuge gun.rle'
+    filePath: 'p8064_27-engine_solifuge gun.rle'
   },
   {
     name: 'Silverfish',
@@ -4212,7 +4212,7 @@ bob$2bo$3o!`,
     // small fallback RLE (a glider) kept for environments without fetch; primary source is filePath
     rle: `x = 3, y = 3, rule = B3/S23
 bob$2bo$3o!`,
-    filePath: '/silverfish.rle'
+    filePath: 'silverfish.rle'
   },
   {
     name: 'Waterbear',
@@ -4221,7 +4221,7 @@ bob$2bo$3o!`,
     // small fallback RLE (a glider) kept for environments without fetch; primary source is filePath
     rle: `x = 3, y = 3, rule = B3/S23
 bob$2bo$3o!`,
-    filePath: '/waterbear.rle'
+    filePath: 'waterbear.rle'
   },
 ];
 
