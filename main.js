@@ -173,7 +173,7 @@ try {
 // Animated tab favicon: cycles through 4 uploaded Websim assets
 // (Favicon1.ico -> Favicon2.ico -> Favicon3.ico -> Favicon4.ico -> back to 1)
 (function setAnimatedFavicon() {
-  const frames = ['favicon1.ico', 'favicon2.ico', 'favicon3.ico', 'favicon4.ico'];
+  const frames = ['/favicon1.ico', '/favicon2.ico', '/favicon3.ico', '/favicon4.ico'];
   const FRAME_INTERVAL_MS = 310; // adjust animation speed here
 
   let link = document.querySelector("link[rel~='icon']");
